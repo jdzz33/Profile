@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ucapan Ulang Tahun</title>
+  <link rel="stylesheet" href="style.css">
+  
+    <script src="script.js"></script>
+  
+</head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url('IMG-20250621-WA0100.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            width: 50%;
+            animation: fadeIn 2s;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto;
+            display: block;
+            animation: bounce 2s infinite;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Sel Happy Birthday!</h1>
+    <img src="IMG-20250130-WA0011.jpg"                                               
+    <input id="nama" type="text" placeholder="Masukkan nama kamu">
+<button id="tombol-kirim" class="tombol-kirim">klik</button>
+<div id="ucapan" style="display: none;">Selamat ulang tahun</div>
+
+<script>
+  const tombolKirim = document.getElementById('tombol-kirim');
+  const ucapan = document.getElementById('ucapan');
+
+  tombolKirim.addEventListener('click', () => {
+    ucapan.style.display = 'block';
+    setTimeout(() => {
+      ucapan.style.display = 'none';
+    }, 2000);
+  });
+</script>
+
+
+<script>
+  const tombolKirim = document.getElementById('tombol-kirim');
+  const ucapan = document.getElementById('ucapan');
+
+  tombolKirim.addEventListener('click', () => {
+    ucapan.style.display = 'block';
+    setTimeout(() => {
+      ucapan.style.display = 'none';
+    }, 2000);
+  });
+</script>
+
+</div>
+
+<script>
+    function ucapan() {
+        let nama = document.getElementById("nama").value;
+        document.getElementById("hasil").innerHTML = `Happy Birthday, ${nama}! Semoga hari mu penuh dengan kebahagiaan dan cinta!`;
+        document.getElementById("hasil-container").style.display = "block";
+    }
+    function tutup() {
+        document.getElementById("hasil-container").style.display = "none";
+    }
+</script>
+
+</body>
+</html>
