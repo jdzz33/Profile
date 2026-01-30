@@ -1,0 +1,25 @@
+.tombol-kirim {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tombol-kirim:hover {
+  background-color: #3e8e41;
+}
+
+.tombol-tutup {
+  background-color: #f44336;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tombol-tutup:hover {
+  background-color: #e74c3c;
+}
